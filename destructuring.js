@@ -52,17 +52,19 @@ let student  = {
     name:"Ahmed",
     email:"ahmed@gmail.com",
     classDetails:{
-        time : "9-11"
+        time:"morning"
     }
 
 }
 
 //destructuring multipple objects
 //classDetails is another object which also need to destructure
+// default value is used if property value does not present 
+//if present then default value donot used
 
-let time = "1112"
+
 let {email , name , classDetails} = student
-let {time: classTime} = classDetails
+let {time = "9-11"} = classDetails
 console.log(email)
 console.log(name)
-console.log(classTime)
+console.log(time)

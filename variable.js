@@ -43,18 +43,33 @@
 
 //not allowing hoisting
 
-var initial = "example of scope"
-function scope(){
-    if(initial){
-        let ex = initial 
-        var example = initial
-    }
-    console.log(example)
-    console.log(ex)
-}
+// var initial = "example of scope"
+// function scope(){
+//     if(initial){
+//         let ex = initial 
+//         var example = initial
+//     }
+//     console.log(example)
+//     console.log(ex)
+// }
 
      
-scope()
+// scope()
 
 
 //let is proving to be block scope
+
+
+//-----const
+//const doesnot allow variable updation as it make the value cosntant
+//like let it is block level scope and also doesnot support hopusting
+
+
+// const n = "Ahad";
+// n = "Ahmed"
+
+// console.log(n)
+console.log(n1)
+
+const n1 = "Hassaan"
+

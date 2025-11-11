@@ -84,12 +84,24 @@ let student  = {
 
 
 
-let search = "email";
+// let search = "email";
 
-//search represents dynamic value
+// //search represents dynamic value
 
-let {[search]: a} = student;
+// let {[search]: a} = student;
 
-//aa is identifies holding dyanamic values of dynamic properties
+// //aa is identifies holding dyanamic values of dynamic properties
 
+// console.log(a)
+
+
+// ---array destructuring
+
+
+let a = [122,"Ghous","Ahmed"]
+
+let [x,y,z] = a
 console.log(a)
+console.log(x)
+console.log(y)
+console.log(z)

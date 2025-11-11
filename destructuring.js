@@ -60,9 +60,9 @@ let student  = {
 //destructuring multipple objects
 //classDetails is another object which also need to destructure
 
-
+let time = "1112"
 let {email , name , classDetails} = student
-let {time} = classDetails
+let {time: classTime} = classDetails
 console.log(email)
 console.log(name)
-console.log(time)
+console.log(classTime)

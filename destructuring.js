@@ -76,10 +76,20 @@ let student  = {
 //its a deep destructuring as classDetails is itself an object
 
 
-let {name , email , classDetails: {time}} = student
+// let {name , email , classDetails: {time}} = student
 
-console.log(name)
-console.log(email)
-console.log(time)
+// console.log(name)
+// console.log(email)
+// console.log(time)
 
 
+
+let search = "email";
+
+//search represents dynamic value
+
+let {[search]: a} = student;
+
+//aa is identifies holding dyanamic values of dynamic properties
+
+console.log(a)

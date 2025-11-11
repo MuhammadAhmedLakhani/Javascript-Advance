@@ -69,7 +69,31 @@
 // n = "Ahmed"
 
 // console.log(n)
-console.log(n1)
+// console.log(n1)
 
-const n1 = "Hassaan"
+// const n1 = "Hassaan"
+
+//v-2
+
+//const can be unpredictable with objects and arrays
+
+const o = {
+    name:"Ahmed",
+}
+
+o.name = "Ghous";
+
+console.log(o)
+
+//name of variable changes with const keyword
+//it is because we are not changing the entire content 
+//it does allow acess to properties and to modify them 
+//but donot allow full replacement of object
+
+
+o = {
+    name:"Ahad"
+}
+
+console.log(o)
 

@@ -63,8 +63,23 @@ let student  = {
 //if present then default value donot used
 
 
-let {email , name , classDetails} = student
-let {time = "9-11"} = classDetails
-console.log(email)
+// let {email , name , classDetails} = student
+// let {time = "9-11"} = classDetails
+// console.log(email)
+// console.log(name)
+// console.log(time)
+
+
+// ---deep property
+//instead of destructureing classTime property again we did it in one line
+//classDetails is destructured at the same time with name and email
+//its a deep destructuring as classDetails is itself an object
+
+
+let {name , email , classDetails: {time}} = student
+
 console.log(name)
+console.log(email)
 console.log(time)
+
+

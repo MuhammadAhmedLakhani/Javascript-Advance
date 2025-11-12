@@ -46,6 +46,34 @@
 
 
 
+// let obj = {
+//     name:"Ahmed",
+//     school:{
+//         schoolName : "SMIT"
+//     }
+// }
+
+
+// let obj1 = obj;
+
+// let obj2 = {
+//     ...obj1,
+//     school:{...obj.school}
+// };
+
+// obj2.school.schoolName = "Saylani";
+
+// console.log(obj,obj1,obj2)
+
+
+//---deep copy V2
+
+// using JSOn.strigify on obj2 and and then parsong it with JSON.parse make the deep copy of the original object in a efficient way
+//now there is no need of making new references again and again
+//no matter how nested the original object is! 
+
+
+
 let obj = {
     name:"Ahmed",
     school:{
@@ -56,15 +84,12 @@ let obj = {
 
 let obj1 = obj;
 
-let obj2 = {
-    ...obj1,
-    school:{...obj.school}
-};
+let obj2 = JSON.parse(JSON.stringify(obj1))
+    
 
 obj2.school.schoolName = "Saylani";
 
 console.log(obj,obj1,obj2)
-
 
 
 

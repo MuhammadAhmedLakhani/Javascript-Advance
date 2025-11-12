@@ -9,13 +9,39 @@
 
 
 
+// let name = "Ahmed";
+
+// let school = "SMIT";
+
+// let obj = {
+//     name:name,
+//     school:school
+// }
+
+// console.log(obj)
+
+
+//---enhanced object
+
+//insteadof wrting proprty value and key again and again which are exactly same you can just ommit the value variable
+//js will automatically understood that values are exactly same as properties and make the desired object automatically
+
+
+
+
+
 let name = "Ahmed";
 
 let school = "SMIT";
 
 let obj = {
-    name:name,
-    school:school
+    name,
+    school,
 }
 
 console.log(obj)
+
+
+
+
+

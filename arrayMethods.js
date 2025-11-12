@@ -20,14 +20,33 @@
 
 // ---map-method()
 //same as forEach but with iteration it also return new array
-//it transform the entire array
+//it transform the entire array 
 
+
+// var arr = ["Karachi","Lahore","Islamabad"];
+
+// let result = arr.map(function(elem){
+//     return `${elem} , Pakistan`
+// })
+
+
+// console.log(result)
+
+
+// ----filter() method
+
+//same as map but also filterout required condition
+//it expects true and false in retuen statement like if block
+//if true then add element to new array and in false donot do so
 
 var arr = ["Karachi","Lahore","Islamabad"];
 
-let result = arr.map(function(elem){
-    return `${elem} , Pakistan`
+var result = arr.filter(function(elem){
+    return elem === "Islamabad";
 })
 
 
+
 console.log(result)
+
+

@@ -98,10 +98,39 @@ let student  = {
 // ---array destructuring
 
 
-let a = [122,"Ghous","Ahmed"]
+// let a = [122,"Ghous","Ahmed"]
 
-let [x,y,z] = a
-console.log(a)
-console.log(x)
-console.log(y)
-console.log(z)
+// let [x,y,z] = a
+// console.log(a)
+// console.log(x)
+// console.log(y)
+// console.log(z)
+
+
+
+
+//function with parameter is defined but when
+// you called it and not pass parameter its is an arror
+//but if you set default value of prarameter 
+//then default value gets as argument if you donot provide argument when calling function
+
+
+//  function defaultParam(a){
+//     console.log(a,"default")
+// }
+
+// defaultParam()
+
+//error produced as no parameter present when function call is made 
+
+
+function defaultParam(a = "default value"){
+    console.log(a,"answer")
+}
+
+defaultParam()
+
+
+//here no erroe as default value of a is used
+// when  actual value not present
+

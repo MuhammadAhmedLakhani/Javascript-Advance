@@ -124,13 +124,23 @@ let student  = {
 //error produced as no parameter present when function call is made 
 
 
-function defaultParam(a = "default value"){
-    console.log(a,"answer")
-}
+// function defaultParam(a = "default value"){
+//     console.log(a,"answer")
+// }
 
-defaultParam()
+// defaultParam()
 
 
 //here no erroe as default value of a is used
 // when  actual value not present
+
+
+
+
+
+
+
+
+
+
 

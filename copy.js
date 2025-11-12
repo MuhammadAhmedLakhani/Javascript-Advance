@@ -36,6 +36,13 @@
 //it is because the inner/nested object still shares the same reference as the all three objects
 //this is the limitation of the "shallow copy" 
 
+//you also need to make new reference of nested object as well
+//like in example below scholl property has new reference in obj2
+//but thiss is not a efficient method as if there are many nested objects you would need to make new references of them as well
+
+
+
+
 
 
 
@@ -49,7 +56,10 @@ let obj = {
 
 let obj1 = obj;
 
-let obj2 = {...obj1};
+let obj2 = {
+    ...obj1,
+    school:{...obj.school}
+};
 
 obj2.school.schoolName = "Saylani";
 

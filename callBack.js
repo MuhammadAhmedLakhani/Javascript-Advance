@@ -13,15 +13,30 @@
 //here in this example function  named "callBack()" is itself a callback function ans is passed as an argument to abc function
 
 
-function abc(cb){
-    setTimeout(function(){
-        console.log("Done")
-        cb()
-    },5000)
+// function abc(cb){
+//     setTimeout(function(){
+//         console.log("Done")
+//         cb()
+//     },5000)
 
-}
-function callBack(){
-    console.log("abc free hogaya hai")
+// }
+// function callBack(){
+//     console.log("abc free hogaya hai")
+// }
+
+// abc(callBack)
+
+
+
+
+// ---call back v-2
+
+//setTimeout is itself a callback function 
+//when it is called it waits for no of seconds mentioned as another argument
+//when time passes it callback the function we passed to it as a first argument  
+
+function xyz(){
+    console.log("now i am free lets talk about business")
 }
 
-abc(callBack)
+setTimeout(xyz,3000)

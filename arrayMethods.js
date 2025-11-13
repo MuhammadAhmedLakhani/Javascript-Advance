@@ -39,14 +39,33 @@
 //it expects true and false in retuen statement like if block
 //if true then add element to new array and in false donot do so
 
-var arr = ["Karachi","Lahore","Islamabad"];
+// var arr = ["Karachi","Lahore","Islamabad"];
 
-var result = arr.filter(function(elem){
-    return elem === "Islamabad";
+// var result = arr.filter(function(elem){
+//     return elem === "Islamabad";
+// })
+
+
+
+// console.log(result)
+
+
+//---V2
+
+//filter method allowed you to have more than one condition through use of && operator
+
+let arr = [ {name:"Karachi",population:500}, {name:"Lahore",population:400},{name:"Islamabad",population:300}];
+
+
+
+let result = arr.filter(function(elem){
+    return elem.population > 200 && elem.population < 500
 })
 
 
-
 console.log(result)
+
+
+
 
 

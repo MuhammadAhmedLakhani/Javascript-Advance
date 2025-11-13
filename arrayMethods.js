@@ -77,11 +77,40 @@
 //also the result is not an array but the elelment itself inthis cas ean object
 
 
-let arr = [{name:"Ahmed",age:25},{name:"Ahad",age:23},{name:"Ghous",age:26}]
+// let arr = [{name:"Ahmed",age:25},{name:"Ahad",age:23},{name:"Ghous",age:26}]
 
-let result = arr.find(function(elem){
-    return elem.name.slice(0,1)=== "A"&& elem.age > 22   
-})
+// let result = arr.find(function(elem){
+//     return elem.name.slice(0,1)=== "A"&& elem.age > 22   
+// })
 
+
+// console.log(result)
+
+
+//---reduce method
+
+//it is mainly use for taking sum of the individual element of  the array
+//unlike other array methods it takes two arguments :
+//1 is call function and other is an identifies
+//identifies is act as new variable and can be set to as default value 
+
+
+//if 2 argument is not provided then array first element is taken is its value (arr[0])
+
+//one first element initial default value is used if provided then this value is return to it after processing  and new value is used in seconfd element of the array and so on 
+
+//finallly final value of the initial is returned as result
+
+
+let arr = [{name:"Ahmed",balance:849},{name:"Ahad",balance:5469},{name:"Ghous",balance:9469}]
+
+
+
+let result = arr.reduce(function(initial, elem){
+    return initial + elem.balance
+},0)
 
 console.log(result)
+
+
+

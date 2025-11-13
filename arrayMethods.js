@@ -102,15 +102,31 @@
 //finallly final value of the initial is returned as result
 
 
-let arr = [{name:"Ahmed",balance:849},{name:"Ahad",balance:5469},{name:"Ghous",balance:9469}]
+// let arr = [{name:"Ahmed",balance:849},{name:"Ahad",balance:5469},{name:"Ghous",balance:9469}]
 
 
 
-let result = arr.reduce(function(initial, elem){
-    return initial + elem.balance
-},0)
+// let result = arr.reduce(function(initial, elem){
+//     return initial + elem.balance
+// },0)
+
+// console.log(result)
+
+
+//---findIndex() method
+
+// findIndex is exactly same as find() array method but instead of returning the element it returns the index of the element that first passed the condition given
+
+//it return minus one if no ele,emtn passed the condition given
+
+let arr = [{name:"Ahmed",age:25},{name:"Ahad",age:23},{name:"Ghous",age:26}]
+
+
+
+let result = arr.findIndex(function(elem){  
+    // console.log(elem.name.slice(0,2) )
+    return elem.name.slice(0,2) === "Ah"
+
+})
 
 console.log(result)
-
-
-

@@ -54,18 +54,34 @@
 
 //filter method allowed you to have more than one condition through use of && operator
 
-let arr = [ {name:"Karachi",population:500}, {name:"Lahore",population:400},{name:"Islamabad",population:300}];
+// let arr = [ {name:"Karachi",population:500}, {name:"Lahore",population:400},{name:"Islamabad",population:300}];
 
 
 
-let result = arr.filter(function(elem){
-    return elem.population > 200 && elem.population < 500
+// let result = arr.filter(function(elem){
+//     return elem.population > 200 && elem.population < 500
+// })
+
+
+// console.log(result)
+
+//----find() method
+
+//it is similar to filter method except for two things:
+//it only return one result even though two eleemnt meet teh criteria but first one is picked
+//it only return an element not array of result unlike filter
+//also it also support one condition
+
+//--note
+//even though both ahmed and ahad both qualifies for the condition but only first one (ahmed) is counted
+//also the result is not an array but the elelment itself inthis cas ean object
+
+
+let arr = [{name:"Ahmed",age:25},{name:"Ahad",age:23},{name:"Ghous",age:26}]
+
+let result = arr.find(function(elem){
+    return elem.name.slice(0,1)=== "A"&& elem.age > 22   
 })
 
 
 console.log(result)
-
-
-
-
-

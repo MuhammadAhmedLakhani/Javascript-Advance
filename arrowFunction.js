@@ -39,29 +39,55 @@
 
 //instead arrow function looks for its parent and its this value is ame as of its parent
 
-let obj = {
-    name:"Ahmed",
-    balance:10000,
-    showBalance:() => {
-        console.log(this)
-    }
+// let obj = {
+//     name:"Ahmed",
+//     balance:10000,
+//     showBalance:() => {
+//         console.log(this)
+//     }
+// }
+
+
+
+// obj.showBalance()
+
+// //since parent has window object it is also assign to it 
+
+
+
+// let obj1 = {
+//     name:"Ahmed",
+//     balance:10000,
+//     showBalance:function(){
+//         console.log(this)
+//     }
+// }
+
+
+// obj1.showBalance()
+
+
+//--argument
+
+//normal function has keyword argument and it has list of arguments ans also other methods which are not very helpful along with the prototype
+
+//arrow function has no argujmnets and its vey light and performance efficient
+
+
+
+
+function normal(n){
+    console.log(arguments)
+}
+
+normal(5)
+
+let  a = () => {
+    console.log(arguments)
 }
 
 
-
-obj.showBalance()
-
-//since parent has window object it is also assign to it 
+a()
 
 
 
-let obj1 = {
-    name:"Ahmed",
-    balance:10000,
-    showBalance:function(){
-        console.log(this)
-    }
-}
-
-
-obj1.showBalance()

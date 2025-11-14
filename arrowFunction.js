@@ -76,18 +76,45 @@
 
 
 
-function normal(n){
-    console.log(arguments)
+// function normal(n){
+//     console.log(arguments)
+// }
+
+// normal(5)
+
+// let  a = () => {
+//     console.log(arguments)
+// }
+
+
+// a()
+
+
+// --this  V2
+
+//this is now getting valuw of its parent (which is a normal function)
+//this normal function is being called from the object so this
+// value of normal function has object as its value  
+
+
+obj = {
+
+    name:"Ahmed",
+    balance:10000,
+    getInfo:function(){
+        let showBalance = () => {
+            console.log(this)
+        }
+
+        showBalance()
+
+    }
+
 }
 
-normal(5)
 
-let  a = () => {
-    console.log(arguments)
-}
+obj.getInfo()
 
-
-a()
 
 
 

@@ -15,32 +15,63 @@
 //parameter to super is provided only if the parent class has dynamic property(in this example it is school property)
 
 
-class School{
-    constructor(school){
-        this.campus = "HeadOffice"
-        this.school = school
+// class School{
+//     constructor(school){
+//         this.campus = "HeadOffice"
+//         this.school = school
+//     }
+
+
+
+
+
+// }
+
+
+
+
+// class Student extends School{
+//     constructor(school ,name,email){
+//         super(school)
+//         this.name  = name;
+//         this.email  = email;
+
+//     }
+
+
+// }
+
+// let s1 = new Student("Ahad","ahad@gmail.com", "SMIt")
+
+// console.log(s1)
+
+
+//--Abstraction
+
+
+
+
+//means hiding your logic from the user
+// user just use the utility(methods) without ever understanding the  background knowledge of the method 
+//in example below we are using assignmentInfo method but doesnot its background knowldege so its an abstraction
+
+class assign {
+    constructor(assignmentName,assignmentDeadline){
+        this.assignmentName = assignmentName;
+        this.assignmentDeadline = assignmentDeadline
     }
-
-
-
-
+    assignmentInfo(){
+        return `Your Assignment is: ${this.assignmentName} and its dealine is :${this.assignmentDeadline}  ` 
+    }
 
 }
 
 
 
+let info = new assign("AttendenceApp","Tommorow")
 
-class Student extends School{
-    constructor(school ,name,email){
-        super(school)
-        this.name  = name;
-        this.email  = email;
-
-    }
+console.log(info.assignmentInfo())
 
 
-}
 
-let s1 = new Student("Ahad","ahad@gmail.com", "SMIt")
 
-console.log(s1)

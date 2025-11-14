@@ -24,10 +24,44 @@
 //V2 (short sybtax)
 
 //if return is of one line onlt then return keyword can be removed and curly brackets as well
-//if the prameter os one only then round brackets can also be removed
+//if the prameter is one only then round brackets can also be removed
 
-let f = n => n + 100 
+// let f = n => n + 100 
 
-console.log(f(2))
+// console.log(f(2))
 
 
+//arrow functions solved the hoising problem
+
+//arrow function cannot be dec;aredwithout vaiable (expression)
+
+//arrow  function doesnot have its own this binding as oppose to normal function
+
+//instead arrow function looks for its parent and its this value is ame as of its parent
+
+let obj = {
+    name:"Ahmed",
+    balance:10000,
+    showBalance:() => {
+        console.log(this)
+    }
+}
+
+
+
+obj.showBalance()
+
+//since parent has window object it is also assign to it 
+
+
+
+let obj1 = {
+    name:"Ahmed",
+    balance:10000,
+    showBalance:function(){
+        console.log(this)
+    }
+}
+
+
+obj1.showBalance()

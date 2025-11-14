@@ -14,12 +14,20 @@
 
 
 
-let f = (n) => {
-    console.log(n)
-}
+// let f = (n) => {
+//     console.log(n)
+// }
 
-f("ahmed")
+// f("ahmed")
 
 
+//V2 (short sybtax)
+
+//if return is of one line onlt then return keyword can be removed and curly brackets as well
+//if the prameter os one only then round brackets can also be removed
+
+let f = n => n + 100 
+
+console.log(f(2))
 
 

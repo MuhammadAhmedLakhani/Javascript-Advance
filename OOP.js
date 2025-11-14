@@ -55,23 +55,49 @@
 // user just use the utility(methods) without ever understanding the  background knowledge of the method 
 //in example below we are using assignmentInfo method but doesnot its background knowldege so its an abstraction
 
-class assign {
-    constructor(assignmentName,assignmentDeadline){
-        this.assignmentName = assignmentName;
-        this.assignmentDeadline = assignmentDeadline
-    }
-    assignmentInfo(){
-        return `Your Assignment is: ${this.assignmentName} and its dealine is :${this.assignmentDeadline}  ` 
-    }
+// class assign {
+//     constructor(assignmentName,assignmentDeadline){
+//         this.assignmentName = assignmentName;
+//         this.assignmentDeadline = assignmentDeadline
+//     }
+//     assignmentInfo(){
+//         return `Your Assignment is: ${this.assignmentName} and its dealine is :${this.assignmentDeadline}  ` 
+//     }
 
+// }
+
+
+
+// let info = new assign("AttendenceApp","Tommorow")
+
+// console.log(info.assignmentInfo())
+
+//--encapsulation
+
+
+//it means that  all data related to one topic must be under one class ans encapsule(secured)
+//in example below phone key is added which is not encapsulatea ss alll student data is not in one place
+
+
+
+class Student{
+    constructor(name,email){
+        this.name = name;
+        this.email = email;
+    }
 }
 
 
 
-let info = new assign("AttendenceApp","Tommorow")
+let s1 = new Student("Ahad","ahad@gmail.com")
 
-console.log(info.assignmentInfo())
+console.log(s1)
 
+
+let phone =121212312 
+s1.phone = phone
+
+console.log(s1)
 
 
 

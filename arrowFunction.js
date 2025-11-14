@@ -97,23 +97,23 @@
 // value of normal function has object as its value  
 
 
-obj = {
+// obj = {
 
-    name:"Ahmed",
-    balance:10000,
-    getInfo:function(){
-        let showBalance = () => {
-            console.log(this)
-        }
+//     name:"Ahmed",
+//     balance:10000,
+//     getInfo:function(){
+//         let showBalance = () => {
+//             console.log(this)
+//         }
 
-        showBalance()
+//         showBalance()
 
-    }
+//     }
 
-}
+// }
 
 
-obj.getInfo()
+// obj.getInfo()
 
 
 

@@ -80,24 +80,31 @@
 
 
 
-class Student{
-    constructor(name,email){
-        this.name = name;
-        this.email = email;
-    }
-}
+// class Student{
+//     constructor(name,email){
+//         this.name = name;
+//         this.email = email;
+//     }
+// }
 
 
 
-let s1 = new Student("Ahad","ahad@gmail.com")
+// let s1 = new Student("Ahad","ahad@gmail.com")
 
-console.log(s1)
+// console.log(s1)
 
 
-let phone =121212312 
-s1.phone = phone
+// let phone =121212312 
+// s1.phone = phone
 
-console.log(s1)
+// console.log(s1)
 
+
+
+//---Polymerphism
+
+//same object/array/function behaves differently in different scenerios
+
+//based on different user interaction 
 
 

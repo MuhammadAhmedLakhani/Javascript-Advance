@@ -13,16 +13,16 @@
 
 
 
-let getDate = ()=>{
+export let getDate = ()=>{
    return  new Date().toDateString()
 }
 
 
-let getTime = () => {
+export  let getTime = () => {
     return new Date().getTime()
 }
 
-let appName = "Quiz"
+export let appName = "Quiz"
 
 //=-default export
 
@@ -32,6 +32,13 @@ let appName = "Quiz"
 //you can even change the method(or anyother thing exported) to your custom one while importing them
 
 
-export default getDate
+//-V3
 
-export { getDate ,getTime , appName}
+
+//instead of exporting multiple elelments in the end of file you can export them when they sre declsred 
+//by writing export before the declaration
+
+
+
+
+export default getDate

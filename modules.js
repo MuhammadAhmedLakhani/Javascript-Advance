@@ -24,6 +24,14 @@ let getTime = () => {
 
 let appName = "Quiz"
 
+//=-default export
 
+// export default means that its system export (understood)
+//you donit need curley braket neither in export nor in import
+
+//you can even change the method(or anyother thing exported) to your custom one while importing them
+
+
+export default getDate
 
 export { getDate ,getTime , appName}

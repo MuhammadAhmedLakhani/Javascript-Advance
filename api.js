@@ -51,15 +51,31 @@
 //we convert the data to special format called json
 //another .then is used as  json() is asyncronous method and second then donot run until first then got result of its call back function and return back to res variable
 
+// --Getting API data
+
+//since process of fetching data from API is asyncronous(line below this donot wait for it to complete processing)
+//We cannot just get API data outside the fetch as whenfetch is busy doing its work the variable looks for res(data) early which isnot available as of yet
+
+//call back function is the solution of this issue
+
+//when second .then gets value it call the callback function (cb)
+//cb consoles the value 
+
+
+let getData = (cb) => {
+    
+    fetch("https://fakestoreapi.com/products").
+    then((res)=> res.json()).
+    then((res1)=> cb(res1) )
+
+
+
+}    
 
 
 
 
-fetch("https://fakestoreapi.com/products").
-then((res)=> res.json()).
-then((res1)=>console.log(res1) )
-
-
+getData((data) => console.log(data,"data") )
 
 
 

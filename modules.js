@@ -8,7 +8,7 @@
 //recieves the function in another file through import {} in object style followed by from destination file
 
 //donot forget to include typ;e module in script tag as well
-
+    
 //--default V2
 
 //export  defualt can also be declared while declaring function
@@ -19,16 +19,16 @@
 
 
 
-export default () => {
+let getDate =  () => {
     return new Date().toDateString()
 }
 
 
-export let getTime = () => {
+let getTime = () => {
     return new Date().getTime()
 }
 
-export let appName = "Quiz"
+let appName = "Quiz"
 
 //=-default export
 
@@ -45,6 +45,6 @@ export let appName = "Quiz"
 //by writing export before the declaration
 
 
+export {getDate , getTime , appName}
 
-
-// export default getDate
+export default getDate

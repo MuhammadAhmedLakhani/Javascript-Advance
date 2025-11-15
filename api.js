@@ -16,3 +16,61 @@
 // .Posr is used for sending data to server
 // .put and .fetch is used for updating data at server
 //Api has alot of methods
+
+//API in Js
+
+//in javascript to get data from the api fetch method is used
+
+//we are using fake api for learning purposes
+
+
+// https://fakestoreapi.com/products
+
+// ..with respect to location object
+// in url above :
+
+// "https" is protocol
+
+// "fakestoreapi.com/products" is hostName
+
+//"products" is pathName
+
+//"https://fakestoreapi.com/products" is href/dulPath
+
+
+//in api formate:
+
+//"https://fakestoreapi.com" is called base url
+
+//"/products" is called endPoint(can be multiple)
+
+//in js fetch method is used for getting data from the bacendApp server 
+// .then() method is used for getting api result
+//.then() calls  a call back function which is called when data is transfered from server to frontend in a parameter (usually res for response)
+//in call function we decide/define what to do with data
+//we convert the data to special format called json
+//another .then is used as  json() is asyncronous method and second then donot run until first then got result of its call back function and return back to res variable
+
+
+
+
+
+fetch("https://fakestoreapi.com/products").
+then((res)=> res.json()).
+then((res1)=>console.log(res1) )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,6 +18,12 @@ let getDate = ()=>{
 }
 
 
-export {
-    getDate
+let getTime = () => {
+    return new Date().getTime()
 }
+
+let appName = "Quiz"
+
+
+
+export { getDate ,getTime , appName}

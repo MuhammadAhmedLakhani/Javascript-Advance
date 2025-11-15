@@ -1,4 +1,4 @@
-import { getDate , getTime , appName } from "./modules.js";
+import {  getTime , appName } from "./modules.js";
 
 import date from "./modules.js"
 
@@ -10,7 +10,7 @@ import date from "./modules.js"
 
 console.log(date())
 
-console.log(getDate())
+// console.log(getDate())
 
 console.log(getTime());
 

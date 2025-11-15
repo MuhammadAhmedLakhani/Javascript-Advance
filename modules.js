@@ -9,16 +9,22 @@
 
 //donot forget to include typ;e module in script tag as well
 
+//--default V2
+
+//export  defualt can also be declared while declaring function
+//but name must be ommited as it can be called with any name in importing file
+//but there is a bittle neck that you cannit do bith simple export and default export in a function with this declaration style method
+
+//for this purpose it is advided to do export and default export in the end of the file
 
 
 
-
-export let getDate = ()=>{
-   return  new Date().toDateString()
+export default () => {
+    return new Date().toDateString()
 }
 
 
-export  let getTime = () => {
+export let getTime = () => {
     return new Date().getTime()
 }
 
@@ -35,10 +41,10 @@ export let appName = "Quiz"
 //-V3
 
 
-//instead of exporting multiple elelments in the end of file you can export them when they sre declsred 
+//instead of exporting multiple elelments in the end of file you can export them when they sre declsred
 //by writing export before the declaration
 
 
 
 
-export default getDate
+// export default getDate

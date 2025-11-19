@@ -76,6 +76,8 @@ let getData = (cb) => {
 
 
 getData((data) => console.log(data,"data") )
+getData((data) => console.log(data,"data") )
+getData((data) => console.log(data,"data") )
 
 
 
